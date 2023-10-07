@@ -6,6 +6,12 @@ body {
   background-color:#FFFDFA;
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1{
   font-size: 30px;
 }
@@ -31,27 +37,52 @@ nav form{
   }
 }
 
+input{
+  height: 30px;
+  padding: 0px 10px;
+  outline: none;
+  border: solid 2px #FFFDFA;
+}
+
+input:focus{
+  border: solid 2px #2b78e4;
+}
+
+.btn {
+  background-color: #2b78e4;
+  color: #FFFDFA;
+  border: none;
+  height: 34px;
+}
+
+.btn:hover{
+  filter: brightness(1.2);
+}
+
 .card-container{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .card{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #5DBFDF;
   padding: 20px;
   border-radius: 1rem;
   min-width: 30vh;
-  gap: 30px;
   color: #FFFDFA;
-  cursor: pointer;
+
 }
 
-.card button{
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+button{
   background: none;
   border: none;
   cursor: pointer;
@@ -60,6 +91,11 @@ nav form{
   width: 100px;
   height: 30px;
   background-color: #2b78e4;
+  border-radius: 1rem;
+}
+
+button:hover{
+  filter: brightness(1.2);
 }
 
 .condition{
@@ -85,7 +121,7 @@ nav form{
 }
 
 .others-hiden{
-  display: none;
+  display:none;
 }
 
 .temps{

@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <NavBar setCity={setCity} city={city}/>
-      <h2>{city.toUpperCase()} CLIMATE</h2>
+      <h2>{city.toUpperCase()} WEATHER</h2>
       <div className="card-container">
         {forecast.map((climate, index) => {
           return <Card key={index} climate={climate} index={index} />;
