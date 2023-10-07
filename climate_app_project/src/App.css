@@ -1,27 +1,91 @@
-#root {
-  max-width: 1280px;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  background-color:#FFFDFA;
+}
+
+h1{
+  font-size: 30px;
+}
+
+nav{
+  height: 40px;
+  padding: 20px;
+  color: #FFFDFA;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5DBFDF;
+  margin-bottom: 50px;
+}
+
+nav form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 24rem;
+  & label {
+    font-size: 20px;
+  }
 }
 
 .card-container{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
 }
 
 .card{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: #82D7F4;
+  background-color: #5DBFDF;
   padding: 20px;
   border-radius: 1rem;
-  height: 30vh;
-  width: 25vh;
+  min-width: 30vh;
+  gap: 30px;
+  color: #FFFDFA;
+  cursor: pointer;
+}
+
+.card button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  color: #FFFDFA;
+  width: 100px;
+  height: 30px;
+  background-color: #2b78e4;
+}
+
+.condition{
+  font-size: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+  & img{
+    background-color: #FFFDFA;
+    border-radius: 50%;
+    padding: 15px;
+  }
+}
+
+.others{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.others-hiden{
+  display: none;
 }
 
 .temps{
@@ -29,4 +93,11 @@
   justify-content: space-between;
   align-items: center;
   width: 10rem;
+  font-size: 21px;
+  & .min{
+    color: #2b78e4;
+  }
+  & .max{
+    color: #dc3545;
+  }
 }
