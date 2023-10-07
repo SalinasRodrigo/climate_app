@@ -6,7 +6,7 @@ import { useForecast } from "./hooks/useForescast";
 
 
 function App() {
-  const [city, setCity] = useState("London");
+  const [city, setCity] = useState("Asunción");
   const {forecast, errorMessage} = useForecast({city})
   
   return (
