@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
 
-export const NavBar = ({setCity, city}) => {
+export const NavBar = ({setCity}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
     const newCity = document.getElementById("city")
+    if (newCity.value == ""){
+      return
+    }
     setCity(newCity.value)
-    console.log(city)
   }
   return(
     <nav>
